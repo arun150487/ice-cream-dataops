@@ -1,0 +1,7 @@
+- externalId: ds_icapi
+  name: ice_cream_api
+  description: This dataset contains asset data for the Hamburg location.
+  writeProtected: false
+  metadata:
+    origin: cognite-toolkit
+    
