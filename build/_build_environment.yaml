@@ -197,7 +197,7 @@ built_resources:
       externalId: oee_timeseries
     source:
       path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/functions/functions.Function.yaml
-      hash: 1c48c34b
+      hash: 3579da40
     kind: Function
     destination: build/functions/3.functions.Function.yaml
   - identifier:
@@ -215,16 +215,16 @@ read_modules:
 - dir: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api
   resource_directories:
   - auth
-  - data_models
-  - extraction_pipelines
-  - functions
-  - transformations
-  - raw
   - data_sets
+  - transformations
+  - data_models
   - hosted_extractors
+  - functions
+  - extraction_pipelines
+  - raw
 - dir: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee
   resource_directories:
-  - functions
   - auth
   - data_sets
   - data_models
+  - functions

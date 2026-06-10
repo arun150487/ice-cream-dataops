@@ -5,4 +5,4 @@
   metadata:
     version: "1.0"
   runtime: py311
-  functionPath: ./oee_timeseries/handler.py
+  functionPath: ./handler.py
