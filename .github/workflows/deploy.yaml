@@ -24,10 +24,12 @@ jobs:
     strategy:
       matrix:
         include:
-          # Deploy to 'test' environment automatically, only on push to main branch
-          - environment: ${{ inputs.environment != '' && inputs.environment || 'test' }}
-            project: ${{ inputs.environment != '' && inputs.environment == 'prod' && 'cdf-bootcamp-26-prod' || 'cdf-bootcamp-26-test' }}
+          - environment: test
+            project: cdf-bootcamp-26-test
+          - environment: prod
+            project: cdf-bootcamp-26-prod
 
+    if: ${{ matrix.environment == (inputs.environment || 'test') }}
     environment: ${{ matrix.environment }}
     env:
       # Cognite Toolkit environment variables
