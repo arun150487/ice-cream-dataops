@@ -25,13 +25,16 @@ jobs:
     strategy:
       matrix:
         include:
-          # Deploy to 'test' environment automatically, only on push to main branch
-          - environment: ${{ inputs.environment != '' && inputs.environment || 'test' }}
+          - environment: test
+            project: cdf-bootcamp-26-test
+          - environment: prod
+            project: cdf-bootcamp-26-prod
 
+    if: ${{ matrix.environment == (inputs.environment || 'test') }}
     environment: ${{ matrix.environment }}
     env:
       # Cognite Toolkit environment variables
-      CDF_PROJECT: cdf-bootcamp-26-${{ matrix.environment }}
+      CDF_PROJECT: ${{ matrix.project }}
 
       CDF_CLUSTER: westeurope-1
       IDP_TENANT_ID: 16e3985b-ebe8-4e24-9da4-933e21a9fc81
