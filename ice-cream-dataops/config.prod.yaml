@@ -1,5 +1,5 @@
 environment:
-  name: prod 
+  name: prod
   project: cdf-bootcamp-26-prod
   validation-type: prod
   selected:
