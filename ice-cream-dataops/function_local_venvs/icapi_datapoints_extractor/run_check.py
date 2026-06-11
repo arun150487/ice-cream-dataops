@@ -42,7 +42,7 @@ def main() -> None:
     print("icapi_datapoints_extractor LOGS:")
     response = handle(
         client=client,
-        data={'hours': 1},
+        data={'backfill': True, 'hours': 120},
     )
 
     print("icapi_datapoints_extractor RESPONSE:")
