@@ -1,7 +1,7 @@
 environment:
   name: test 
   project: cdf-bootcamp-26-test
-  validation-type: test
+  validation-type: dev
   selected:
     - modules/bootcamp/data_foundation
     - modules/bootcamp/ice_cream_api
