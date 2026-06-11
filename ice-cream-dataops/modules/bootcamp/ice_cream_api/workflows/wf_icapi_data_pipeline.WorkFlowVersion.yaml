@@ -19,7 +19,7 @@ workflowDefinition:
       type: transformation
       parameters:
         transformation:
-          externalId: contextualize_ts_assets
+          externalId: create_contextualize_ts_assets
       retries: 3
       timeout: 3600
       onFailure: abortWorkflow
