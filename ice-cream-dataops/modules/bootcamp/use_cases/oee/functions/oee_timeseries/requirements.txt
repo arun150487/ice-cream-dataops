@@ -1,1 +1,2 @@
-cognite-sdk[pandas]==7.89.0
+pandas
+cognite-sdk==7.89.0
