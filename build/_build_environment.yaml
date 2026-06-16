@@ -139,14 +139,14 @@ built_resources:
       externalId: ds_icapi
     source:
       path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/data_sets/data_sets.DataSet.yaml
-      hash: 93f7309e
+      hash: d0ae3972
     kind: DataSet
     destination: build/data_sets/1.data_sets.DataSet.yaml
   - identifier:
-      externalId: ds_icapi
+      externalId: ds_uc_oee
     source:
       path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee/data_sets/data_sets.DataSet.yaml
-      hash: '23271944'
+      hash: 19da0c48
     kind: DataSet
     destination: build/data_sets/2.data_sets.DataSet.yaml
   data_models:
@@ -237,18 +237,18 @@ read_modules:
   - auth
 - dir: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api
   resource_directories:
-  - auth
-  - transformations
-  - hosted_extractors
+  - raw
   - data_sets
   - data_models
-  - workflows
-  - raw
+  - hosted_extractors
+  - transformations
   - extraction_pipelines
+  - auth
   - functions
+  - workflows
 - dir: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee
   resource_directories:
   - auth
-  - data_models
   - data_sets
   - functions
+  - data_models
