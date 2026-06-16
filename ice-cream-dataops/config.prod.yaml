@@ -1,14 +1,13 @@
 environment:
-  name: prod # prod, staging, dev, test, qa
-  project: cdf-bootcamp-26-prod # ex. cdf-bootcamp-01-test
-  validation-type: prod # prod, staging, dev, test, qa
+  name: prod
+  project: cdf-bootcamp-26-prod
+  validation-type: prod
   selected:
     - modules/bootcamp/data_foundation
     - modules/bootcamp/ice_cream_api
     - modules/bootcamp/use_cases/oee
 
 variables:
-  pause_transformations: false  
   modules:
     bootcamp:
       # Variables shared by modules
