@@ -1,2 +1,3 @@
 externalId: wf_icapi_data_pipeline
-description: Workflow to orchestrate the data pipeline for the Ice Cream API project.
+description: Workflow to run ICAPI data pipeline including asset hierarchy, contextualization,
+  datapoints extraction and OEE calculation.
