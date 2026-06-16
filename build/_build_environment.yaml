@@ -183,15 +183,15 @@ built_resources:
     kind: Schedule
     destination: build/transformations/3.create_asset_hierarchy.schedule.yaml
   - identifier:
-      externalId: create_contextualize_ts_assets
+      externalId: contextualize_ts_assets
     source:
       path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/transformations/create_contextualize_ts_assets.Transformation.yaml
-      hash: 9a498dd8
+      hash: 23ded3cd
     kind: Transformation
     destination: build/transformations/4.create_contextualize_ts_assets.Transformation.yaml
     extra_sources:
     - path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/transformations/create_contextualize_ts_assets.Transformation.sql
-      hash: 5f9044ee
+      hash: 5bc0c92b
   functions:
   - identifier:
       externalId: icapi_datapoints_extractor
@@ -237,18 +237,18 @@ read_modules:
   - auth
 - dir: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api
   resource_directories:
-  - raw
-  - data_models
-  - extraction_pipelines
-  - hosted_extractors
-  - transformations
-  - data_sets
-  - workflows
   - auth
   - functions
+  - data_sets
+  - raw
+  - workflows
+  - transformations
+  - data_models
+  - hosted_extractors
+  - extraction_pipelines
 - dir: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee
   resource_directories:
-  - data_models
   - auth
-  - functions
   - data_sets
+  - functions
+  - data_models
