@@ -205,7 +205,7 @@ built_resources:
       name: Frontfill every 10 minutes for the last hour of data (streamer)
     source:
       path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/functions/schedules.Schedule.yaml
-      hash: 715fa105
+      hash: b631e244
     kind: Schedule
     destination: build/functions/2.schedules.Schedule.yaml
   - identifier:
@@ -213,7 +213,7 @@ built_resources:
       name: Backfill all sites once a day for the last 5 days (gap filling)
     source:
       path: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api/functions/schedules.Schedule.yaml
-      hash: 715fa105
+      hash: b631e244
     kind: Schedule
     destination: build/functions/2.schedules.Schedule.yaml
   - identifier:
@@ -237,18 +237,18 @@ read_modules:
   - auth
 - dir: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/ice_cream_api
   resource_directories:
-  - auth
+  - hosted_extractors
   - raw
   - workflows
+  - transformations
+  - auth
   - data_models
-  - hosted_extractors
   - functions
   - extraction_pipelines
   - data_sets
-  - transformations
 - dir: /workspaces/ice-cream-dataops/ice-cream-dataops/modules/bootcamp/use_cases/oee
   resource_directories:
   - auth
   - functions
-  - data_sets
   - data_models
+  - data_sets
