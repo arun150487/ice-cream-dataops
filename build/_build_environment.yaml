@@ -250,5 +250,5 @@ read_modules:
   resource_directories:
   - auth
   - functions
-  - data_models
   - data_sets
+  - data_models
